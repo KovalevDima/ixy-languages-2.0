@@ -1,0 +1,9 @@
+# Nix
+/result
+/.direnv
+
+# Misc
+*~
+
+# Haskell
+dist-newstyle
