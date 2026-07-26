@@ -5,6 +5,10 @@
       url = "github:ixy-languages/ixy.go/master";
       flake = false;
     };
+    moongen = {
+      url = "github:tumi8/moongen";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, ... } @ inputs:
@@ -18,6 +22,7 @@
       in {
         ixy-haskell = pkgs.haskellPackages.callCabal2nix "ixy-haskell" ./ixy-haskell { };
         ixy-go = import ./ixy-go { inherit pkgs; go-src = inputs.ixy-languages-go; };
+        moongen = import ./benchmark { inherit pkgs; moongen-src = inputs.moongen; };
       });
   };
 }

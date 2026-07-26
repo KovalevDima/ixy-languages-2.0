@@ -17,6 +17,22 @@
         "type": "github"
       }
     },
+    "moongen": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1781022378,
+        "narHash": "sha256-9zvILXnsjFtVxv57G1CyAueSdEWKhcYWzvI9Y03kqFY=",
+        "owner": "tumi8",
+        "repo": "moongen",
+        "rev": "a809c5f5a70c65f659a56ec066da84c1de32d851",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tumi8",
+        "repo": "moongen",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1784812282,
@@ -36,6 +52,7 @@
     "root": {
       "inputs": {
         "ixy-languages-go": "ixy-languages-go",
+        "moongen": "moongen",
         "nixpkgs": "nixpkgs"
       }
     }
