@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "ixy-languages-go": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1613209990,
+        "narHash": "sha256-Xb84sx8aeRz7vnp/0DHqUd4yAK872NTPSO32baKf+YQ=",
+        "owner": "ixy-languages",
+        "repo": "ixy.go",
+        "rev": "775c9b23a8a8ee3589911d5e4dc2d11228f27171",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ixy-languages",
+        "ref": "master",
+        "repo": "ixy.go",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1784812282,
@@ -18,6 +35,7 @@
     },
     "root": {
       "inputs": {
+        "ixy-languages-go": "ixy-languages-go",
         "nixpkgs": "nixpkgs"
       }
     }
